@@ -7,14 +7,26 @@ import math
 def sineFunction(angle):
 
     sineValue = math.sin(math.radians(angle))
-
     return sineValue
 
+def cosFunction(angle):
+
+    cosValue = math.cos(math.radians(angle))
+    return cosValue
+
+cosValues = []
 sineValues = []
 
-for angle in range(360):
+for angle in range(45):
     sineValues.append(sineFunction(angle))
+    cosValues.append(cosFunction(angle))
 
-for sines in sineValues:
-    print sines
+for i in range(45):
+    print "sin " + str(sineValues[i])
+    print "cos " + str(cosValues[i])
     print "\n"
+
+
+
+
+
